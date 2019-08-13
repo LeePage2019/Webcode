@@ -15,7 +15,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             "headers": { k: v for k, v in self.headers.items() },
         }
 
-        # From https://snipt.net/raw/f8ef141069c3e7ac7e0134c6b58c25bf/?nice
+        
         form = cgi.FieldStorage(
             fp=self.rfile,
             headers=self.headers,
